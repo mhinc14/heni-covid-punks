@@ -1,5 +1,8 @@
 # You can view this app here
 
+
+Click this link below to view the app. Make sure to click 'King Makers' in the top right corner to view an NFT collection with images.
+
 https://61bb5698f8f2c60008d483d6--gifted-wiles-1a16cc.netlify.app/
 
 # Current issues

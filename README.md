@@ -2,6 +2,16 @@
 
 https://61bb5698f8f2c60008d483d6--gifted-wiles-1a16cc.netlify.app/
 
+# Current issues
+
+Pinanta rate limiting 
+Rate limiting on Pinanta means we can’t always retrieve the metadata when calling the tokenUR for CovidPunks. This problem does not exist when getting data for Kingmakers as this has a dedicated Pinata gateway.
+https://docs.pinata.cloud/rate-limits
+
+Potential solutions include:
+Ask the content owner to upgrade to a Dedicated Gateway. (I have done this for my KingMakers collection so we do not get rate limited when viewing those).
+Host the images ourselfs.
+
 # Understand my process when developing this app
 
 https://docs.google.com/document/d/14wrF-OFSpLqbGFZe0Ay34G5N-t_kQwPVKnMNrF6HWlM/edit?usp=sharing

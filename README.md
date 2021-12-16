@@ -2,7 +2,7 @@
 
 Click this link below to view the app. Make sure to click 'King Makers' in the top right corner to view an NFT collection with images.
 
-https://61bb611860c6b200072912f0--gifted-wiles-1a16cc.netlify.app/kingmakers
+https://61bb64a29364ef0007b64435--gifted-wiles-1a16cc.netlify.app/
 
 # Current issues
 

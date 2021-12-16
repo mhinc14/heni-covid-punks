@@ -142,7 +142,7 @@ const useGetCovidPunks: (nftCollection: NFTCollections, offset?: number) => GetC
     if (addresses) {
       setIsLoading(false)
     }
-  }, [addresses])
+  }, [addresses, metaData])
 
   return {
     nftTokensMetaData,

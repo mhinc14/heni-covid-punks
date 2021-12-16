@@ -1,5 +1,11 @@
 # You can view this app here
 
+https://61bb5698f8f2c60008d483d6--gifted-wiles-1a16cc.netlify.app/
+
+# Understand my process when developing this app
+
+https://docs.google.com/document/d/14wrF-OFSpLqbGFZe0Ay34G5N-t_kQwPVKnMNrF6HWlM/edit?usp=sharing
+
 # How to run app locally
 
 After downloading the files, make sure to install the packages by running npm install or yarn.

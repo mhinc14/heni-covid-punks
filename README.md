@@ -1,6 +1,28 @@
 # You can view this app here
 
+Click this link below to view the app. Make sure to click 'King Makers' in the top right corner to view an NFT collection with images.
+
 https://61bb5698f8f2c60008d483d6--gifted-wiles-1a16cc.netlify.app/
+
+# Current issues
+
+**Pinanta rate limiting:**
+
+Rate limiting on Pinanta means we can’t always retrieve the metadata when calling the tokenUR for CovidPunks. This problem does not exist when getting data for Kingmakers as this has a dedicated Pinata gateway.
+https://docs.pinata.cloud/rate-limits
+
+Potential solutions include:
+
+Ask the content owner to upgrade to a Dedicated Gateway. (I have done this for my KingMakers collection so we do not get rate limited when viewing those).
+Host the images ourselfs.
+
+**CORS cross origin error:**
+
+Sometimes when retrieving the metadata for CovidPunks, a CORS error is encountered.
+
+Potential solutions include
+
+Creating a proxy server to retrieve the images and setting ‘Access-Control-Allow-Origin: \*’ in the header
 
 # Understand my process when developing this app
 

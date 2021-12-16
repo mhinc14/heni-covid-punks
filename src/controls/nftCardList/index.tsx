@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import NFTCard from "controls/nftCardList/nftCard";
 import Pagination from "controls/pagination";
 import { NFTTokensMeta } from "hooks/useGetNFTCollection";
@@ -41,15 +41,41 @@ export default function NFTCardList({
       case 5:
         setOffset(80);
         break;
-
       default:
+        setOffset(0);
         break;
     }
   };
 
+  const getTokenNumber: (offset: number) => string = (offset) => {
+    switch (offset) {
+      case 0:
+        return "1 - 20";
+      case 20:
+        return "21 - 40";
+
+      case 40:
+        return "41 - 60";
+
+      case 60:
+        return "61 - 80";
+
+      case 80:
+        return "81 - 100";
+
+      default:
+        return "-";
+    }
+  };
+
+  const tokenNumbers = getTokenNumber(offset);
+
   return (
     <>
-      <Pagination onPaginationChange={handlePaginationChange} />
+      <Grid container justifyContent="flex-end" flexDirection="column">
+        <Typography>NFTs: {tokenNumbers}</Typography>
+        <Pagination onPaginationChange={handlePaginationChange} />
+      </Grid>
       <Grid container>
         {nftTokensMetaData.map((nftToken) => {
           return (
@@ -66,7 +92,7 @@ export default function NFTCardList({
                 isLoading={isLoading}
                 imageUrl={nftToken.image}
                 address={nftToken.address}
-                name={nftToken.name}
+                tokenId={nftToken.tokenId}
               />
             </Grid>
           );

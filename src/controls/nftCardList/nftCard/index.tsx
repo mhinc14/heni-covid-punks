@@ -8,7 +8,7 @@ type NFTCardProps = {
   isLoading: boolean;
   imageUrl: string;
   address: string;
-  name: string;
+  tokenId: number;
 };
 
 const styles = {
@@ -23,7 +23,7 @@ export default function NFTCard({
   isLoading,
   imageUrl,
   address,
-  name,
+  tokenId,
 }: NFTCardProps) {
   if (isLoading) {
     return (
@@ -44,7 +44,7 @@ export default function NFTCard({
         />
         <CardContent>
           <Typography gutterBottom variant="subtitle1" component="div">
-            {name}
+            #{tokenId}
           </Typography>
           <Typography gutterBottom variant="caption" component="div">
             Owners address: <Box sx={{ fontSize: 10 }}>{address}</Box>

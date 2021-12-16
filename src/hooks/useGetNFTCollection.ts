@@ -139,10 +139,10 @@ const useGetCovidPunks: (nftCollection: NFTCollections, offset?: number) => GetC
   }, [offset, nftCollection]);
 
   useEffect(() => {
-    if (addresses && metaData) {
+    if (addresses) {
       setIsLoading(false)
     }
-  }, [addresses, metaData])
+  }, [addresses])
 
   return {
     nftTokensMetaData,

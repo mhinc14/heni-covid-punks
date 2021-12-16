@@ -40,7 +40,7 @@ export default function NFTCard({
           component="img"
           height="140"
           image={imageUrl}
-          alt="green iguana"
+          alt="nft image"
         />
         <CardContent>
           <Typography gutterBottom variant="subtitle1" component="div">
